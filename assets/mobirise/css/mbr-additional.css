@@ -5212,50 +5212,6 @@ label {
 }
 }
 
-.cid-8GmeZiR9FH {
-@Whatbutton: true;
-@heightwhat: 60;
-@widthwhat: 58;
-@bottomwhat: 15;
-@rightwhat: 3;
-@borderadius: 60;
-@bgcolorwhat: #25d366;
-@colorwhat: #ffffff;
-@FontSize: 30;
-
-& when (@Whatbutton) {
-  .float {
-    position: fixed;
-    width: (@widthwhat * 1px);
-    height: (@heightwhat * 1px);
-    bottom: (@bottomwhat * 1px);
-    right: (@rightwhat * 1px);
-    background-color: @bgcolorwhat;
-    color: @colorwhat;
-    border-radius: (@borderadius * 1px);
-    text-align: center;
-    font-size: (@FontSize * 1px);
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-  }
-  .my-float {
-    margin-top: 16px;
-  }
-}
-P {
-  color: #232323;
-}
-DIV {
-  color: #ffffff;
-}
-H10 {
-  color: #767676;
-}
-.hidden {
-  display: none;
-}
-}
-
 .cid-s4WerlumQw {
 @paddingTop: 2;
 @paddingBottom: 2;
