@@ -53,7 +53,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 114,
+    "uniqCompNum": 115,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "witsec-mailform": false,
@@ -870,8 +870,8 @@
             },
             "& when not (@bglayer)": {
               ".image-1": {
-                "left": "35px !important",
-                "bottom": "7px !important"
+                "left": "-95px !important",
+                "bottom": "-113px !important"
               },
               ".image-2": {
                 "top": "95px !important"
@@ -885,22 +885,45 @@
               },
               "@media (max-width: 1199px)": {
                 ".image-1": {
-                  "left": "85px !important",
-                  "bottom": "-133px !important"
+                  "left": "-175px !important"
                 },
                 ".image-2": {
                   "top": "5px !important"
                 },
                 ".image-3": {
-                  "left": "789px !important",
-                  "bottom": "49px !important"
+                  "left": "-11px !important",
+                  "bottom": "-141px !important"
                 },
                 ".image-4": {
-                  "bottom": "-52px !important"
+                  "bottom": "-352px !important"
                 },
                 ".image-5": {
-                  "left": "597px !important",
-                  "top": "-115px !important"
+                  "left": "-203px !important",
+                  "top": "185px !important"
+                }
+              },
+              "@media (max-width: 992px)": {
+                ".image-1": {
+                  "left": "185px !important"
+                },
+                ".image-2": {
+                  "top": "-25px !important",
+                  "left": "37% !important"
+                },
+                ".image-3": {
+                  "left": "589px !important",
+                  "bottom": "149px !important"
+                },
+                ".image-4": {
+                  "bottom": "-62px !important"
+                },
+                ".image-5": {
+                  "left": "207px !important",
+                  "top": "-55px !important"
+                },
+                ".image-6": {
+                  "left": "-295px",
+                  "top": "80px"
                 }
               },
               "@media (max-width: 767px)": {
@@ -909,10 +932,11 @@
                   "bottom": "-273px !important"
                 },
                 ".image-2": {
-                  "left": "187px !important"
+                  "left": "187px !important",
+                  "top": "105px !important"
                 },
                 ".image-3": {
-                  "left": "39px !important",
+                  "left": "299px !important",
                   "bottom": "9px !important"
                 },
                 ".image-4": {
@@ -934,14 +958,12 @@
               "position": "relative"
             },
             ".mbr-section-title": {
+              "z-index": "70",
               "color": "@primaryColor"
             },
             ".mbr-text, .mbr-section-btn": {
               "color": "#46495f",
               "z-index": "70"
-            },
-            ".btn": {
-              "padding": "17px 54px !important"
             },
             "img": {
               "max-width": "100%",
@@ -958,120 +980,95 @@
             },
             ".image-1": {
               "position": "absolute",
-              "left": "-75px",
-              "bottom": "107px",
+              "left": "-95px",
+              "bottom": "-3px",
               "-webkit-transition": "all 1s cubic-bezier(0.075, 0.82, 0.165, 1)",
               "transition": "all 1s cubic-bezier(0.075, 0.82, 0.165, 1)",
               "will-change": "transform"
             },
             ".image-2": {
               "position": "absolute",
-              "left": "-33px",
-              "top": "195px",
+              "left": "-23%",
+              "top": "-75%",
+              "right": "auto",
+              "bottom": "auto",
               "-webkit-transition": "all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)",
               "transition": "all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)",
               "will-change": "transform"
             },
             ".image-3": {
               "position": "absolute",
-              "left": "-11px",
-              "bottom": "-141px",
+              "left": "209px",
+              "bottom": "-131px",
               "-webkit-transition": "all 1.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
               "transition": "all 1.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
               "will-change": "transform"
             },
             ".image-4": {
               "position": "absolute",
-              "left": "auto",
-              "right": "-91px",
-              "bottom": "-312px",
+              "right": "-61px",
+              "bottom": "-52px",
               "-webkit-transition": "all 1.6s cubic-bezier(0.19, 1, 0.22, 1)",
               "transition": "all 1.6s cubic-bezier(0.19, 1, 0.22, 1)",
               "will-change": "transform"
             },
             ".image-5": {
               "position": "absolute",
-              "left": "7px",
-              "top": "35px",
+              "left": "77px",
+              "top": "175px",
               "-webkit-transition": "all 1.8s cubic-bezier(0.215, 0.61, 0.355, 1)",
               "transition": "all 1.8s cubic-bezier(0.215, 0.61, 0.355, 1)",
               "will-change": "transform"
             },
             ".image-6": {
               "position": "absolute",
-              "left": "-155px",
-              "top": "40px",
+              "left": "-295px",
+              "top": "290px",
               "-webkit-transition": "all 2s cubic-bezier(0.23, 1, 0.32, 1)",
               "transition": "all 2s cubic-bezier(0.23, 1, 0.32, 1)",
               "will-change": "transform"
             },
-            ".mbr-arrow": {
-              "bottom": "105px !important"
-            },
             "@media (max-width: 1199px)": {
-              ".image-1": {
-                "left": "5px",
-                "bottom": "-293px"
-              },
-              ".image-2": {
-                "left": "277px",
-                "top": "95px"
-              },
-              ".image-3": {
-                "left": "469px",
-                "bottom": "-61px"
-              },
-              ".image-4": {
-                "right": "99px",
-                "bottom": "-192px"
-              },
-              ".image-5": {
-                "left": "7px",
-                "top": "35px"
-              },
               ".image-6": {
-                "left": "615px",
-                "top": "-10px"
+                "left": "-165px",
+                "top": "290px"
               }
             },
             "@media (max-width: 992px)": {
               ".image-1": {
-                "bottom": "-213px"
+                "bottom": "-323px"
               },
               ".image-2": {
-                "top": "115px"
+                "left": "-53%"
               },
-              ".image-4": {
-                "right": "49px",
-                "bottom": "-102px"
+              ".image-3": {
+                "bottom": "29px"
+              },
+              ".image-5": {
+                "left": "337px",
+                "top": "-65px"
               },
               ".image-6": {
-                "left": "-295px",
-                "top": "80px"
+                "top": "60px"
               }
             },
             "@media (max-width: 767px)": {
               ".image-1": {
-                "bottom": "-263px"
+                "left": "205px",
+                "bottom": "-273px"
               },
-              ".image-3": {
-                "left": "9px",
-                "bottom": "39px"
+              ".image-2": {
+                "left": "-27%"
               },
               ".image-4": {
-                "bottom": "-112px",
-                "right": "-31px"
-              },
-              ".image-6": {
-                "left": "-125px",
-                "top": "20px"
+                "right": "-101px"
               }
             }
           },
-          "_name": "header01",
-          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"25\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"25\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"BG Layer\" name=\"bglayer\">\n        <input type=\"color\" title=\"BG Layer Color\" name=\"bgLayerColor\" value=\"#bfebf3\" condition=\"bglayer\">\n        <input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Animation\" name=\"showAnimation\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#716c80\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container align-center\">\n        <div class=\"row\">\n            <div class=\"col-xl-9\">\n                <h1 class=\"mbr-section-title mbr-regular pb-3 align-left mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">LOJAS&nbsp;</h1>\n                <h3 class=\"mbr-section-subtitle align-left align-left mbr-regular pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet, consectetur adipiscing\n                    elit.</h3>\n                <p class=\"mbr-text pb-3 align-left mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Nice \"Call to ACTION\" block.</p>\n            </div>\n            <div class=\"col-xl-3 align-center d-flex flex-column\">\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"align-left mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">GET IT NOW</a></div>\n                <div class=\"wrap\">\n                    <img src=\"../_images/svg/1.svg\" alt=\"Mobirise\" class=\"image-1 animated-elements1\">\n                    <img src=\"../_images/svg/2.svg\" alt=\"Mobirise\" class=\"image-2 animated-elements2\">\n                    <img src=\"../_images/svg/3.svg\" alt=\"Mobirise\" class=\"image-3 animated-elements3\">\n                    <img src=\"../_images/svg/4.svg\" alt=\"Mobirise\" class=\"image-4 animated-elements4\">\n                    <img src=\"../_images/svg/5.svg\" alt=\"Mobirise\" class=\"image-5 animated-elements5\">\n                    <img src=\"../_images/svg/6.svg\" alt=\"Mobirise\" class=\"image-6 animated-elements6\">\n                </div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
-          "_cid": "s504a6gWGH",
-          "_anchor": "header01-35",
+          "_name": "header02",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"25\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"25\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"BG Layer\" name=\"bglayer\">\n        <input type=\"color\" title=\"BG Layer Color\" name=\"bgLayerColor\" value=\"#bfebf3\" condition=\"bglayer\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Animation\" name=\"showAnimation\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#716c80\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container align-center\">\n        <div class=\"row\">\n            <div class=\"col-md-12 col-lg-9 d-flex flex-column\">\n                <h1 class=\"mbr-section-title mbr-regular pb-3 align-left mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">LOJAS É AQUI</h1>\n                <h3 class=\"mbr-section-subtitle align-left align-left mbr-regular pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet, consectetur adipiscing\n                    elit.</h3>\n                <p class=\"mbr-text pb-3 align-left mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    No Clueless Shortcodes or Category Prefixes</p>\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"align-left mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">Get the app</a></div>\n            </div>\n            <div class=\"col-lg-3 col-md-12 align-center\">\n                <div class=\"wrap\">\n                    <img src=\"../_images/svg/1.svg\" alt=\"Mobirise\" class=\"image-1 animated-elements1\">\n                    <img src=\"../_images/svg/2.svg\" alt=\"Mobirise\" class=\"image-2 animated-elements2\">\n                    <img src=\"../_images/svg/3.svg\" alt=\"Mobirise\" class=\"image-3 animated-elements3\">\n                    <img src=\"../_images/svg/4.svg\" alt=\"Mobirise\" class=\"image-4 animated-elements4\">\n                    <img src=\"../_images/svg/5.svg\" alt=\"Mobirise\" class=\"image-5 animated-elements5\">\n                    <img src=\"../_images/svg/6.svg\" alt=\"Mobirise\" class=\"image-6 animated-elements6\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s509uNCaIX",
+          "_anchor": "header02-36",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1090,7 +1087,7 @@
             }
           },
           "_name": "custom-html",
-          "_customHTML": "<CENTER>\n<!--Dropdown primary-->\n<div class=\"dropdown\">\n\n  <!--Trigger-->\n  <button class=\"btn btn-success\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\"\n    aria-haspopup=\"true\" aria-expanded=\"false\">LOJA DE PETS</button>\n\n  <!--Menu-->\n  <div class=\"dropdown-menu dropdown-primary\">\n    <a class=\"dropdown-item\" href=\"https://conectado-10.github.io/UNAMAR/page3.html\">RAÇÕES ELOHIM</a>\n    <a class=\"dropdown-item\" href=\"#\"></a>\n    <a class=\"dropdown-item\" href=\"#\"></a>\n    <a class=\"dropdown-item\" href=\"#\"></a>\n  </div>\n</div>\n<!--/Dropdown primary-->\n</CENTER>",
+          "_customHTML": "BR\nBR\nBR\n\n<CENTER>\n<!--Dropdown primary-->\n<div class=\"dropdown\">\n\n  <!--Trigger-->\n  <button class=\"btn btn-success\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\"\n    aria-haspopup=\"true\" aria-expanded=\"false\">LOJA DE PETS</button>\n\n  <!--Menu-->\n  <div class=\"dropdown-menu dropdown-primary\">\n    <a class=\"dropdown-item\" href=\"https://conectado-10.github.io/UNAMAR/page3.html\">RAÇÕES ELOHIM</a>\n    <a class=\"dropdown-item\" href=\"#\"></a>\n    <a class=\"dropdown-item\" href=\"#\"></a>\n    <a class=\"dropdown-item\" href=\"#\"></a>\n  </div>\n</div>\n<!--/Dropdown primary-->\n</CENTER>",
           "_cid": "s4ZuKUD9Ob",
           "_anchor": "custom-html-2z",
           "_protectedParams": [],
