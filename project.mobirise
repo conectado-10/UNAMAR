@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page1.html",
+    "currentPage": "page9.html",
     "theme": {
       "name": "creativem4",
       "title": "CreativeM4",
@@ -1417,7 +1417,7 @@
             "modalBodyHTML": false,
             "modalFooter": true,
             "modalCloseBtn": true,
-            "modalCloseText": "Close",
+            "modalCloseText": "ENTRAR",
             "modalLink": false,
             "modalLinkUrl": "https://mobirise.com/",
             "modalLinkText": "Visit Mobirise",
@@ -1437,7 +1437,7 @@
           ],
           "_name": "witsec-modal-window-block",
           "_anchor": "witsec-modal-window-block-3a",
-          "modalWindow": "<div class=\"modal fade\" id=\"LOJAS\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"LOJASLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"LOJASLabel\">ESCOLHA A LOJA</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"LOJAS_body\">Escolha a sua loja e vejas as melhores opções . click em um item </div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#LOJAS\").on(\"hidden.bs.modal\", function () {    var html = $( \"#LOJAS_body\" ).html();    $( \"#LOJAS_body\" ).empty();    $( \"#LOJAS_body\" ).append(html);  })});</script>"
+          "modalWindow": "<div class=\"modal fade\" id=\"LOJAS\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"LOJASLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"LOJASLabel\">ESCOLHA A LOJA</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"LOJAS_body\">Escolha a sua loja e vejas as melhores opções . click em um item </div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">ENTRAR</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#LOJAS\").on(\"hidden.bs.modal\", function () {    var html = $( \"#LOJAS_body\" ).html();    $( \"#LOJAS_body\" ).empty();    $( \"#LOJAS_body\" ).append(html);  })});</script>"
         }
       ]
     },
