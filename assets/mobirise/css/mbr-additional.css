@@ -4241,166 +4241,154 @@ P {
 }
 }
 
-.cid-s4X9c4CV3K {
-@paddingTop: 5;
-@paddingBottom: 5;
+.cid-RnpyjWWuxm {
+@paddingTop: 0;
+@paddingBottom: 1;
 @showTitle: true;
-@showName: true;
-@showRole: true;
-@cardsAmount: "1";
+@showSubtitle: false;
+@glow: true;
+@glowBorder: #00c48c;
+@glowColor: #ffffff;
+@showTextHead: true;
+@showText: false;
 @showIcons: true;
-@iconsCount: 3;
-@iconsColor: #133996;
-@iconsHover: #fc643f;
-@cardBG: #bfebf3;
-@bottomCardBg: #ffffff;
-@uname__19: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/sintoniabarra_0040gmail_002ecom/addons/creativem4/components/team01/../_images/background3.jpg";
-@uname__20: true;
-@uname__21: #133996;
-@bg-value: #133996;
+@reverseContent: false;
+@mediaSize: 60;
+@imageBg: true;
+@ImgBgColor: #29a5ef;
+@cardsAmount: "4";
+@uname__13: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/projects/project-2020-05-21_065934/assets/images/design%20ohne%20titel%20(3)-1500x1500.png";
+@uname__14: true;
+@uname__15: #ffffff;
+@bg-value: #ffffff;
 @bg-type: "color";
-@bg-color-value: #133996;
+@bg-color-value: #ffffff;
 @bg-parallax: false;
-@gradientBg: true;
-@color2: #fc643f;
 @overlay: true;
-@overlayColor: #ffffff;
-@overlayOpacity: 0.5;
+@overlayColor: #232323;
+@overlayOpacity: 0.2;
 
 padding-top: (@paddingTop * 15px);
 padding-bottom: (@paddingBottom * 15px);
-& when (@bg-type = "color") {
-  background: @bg-value;
-  & when (@gradientBg) {
-    background: linear-gradient(90deg, @bg-value, @color2);
-  }
+& when (@bg-type = 'color') {
+  background-color: @bg-value;
 }
-& when (@bg-type = "image") {
+& when (@bg-type = 'image') {
   background-image: url(../../../@bg-value);
 }
-.card-wrap {
-  margin-bottom: 3rem;
-  overflow-y: hidden;
-  border-radius: 20px;
-  .card-block {
-    -webkit-flex-grow: 0;
-    flex-grow: 0;
-    padding: 1.4rem 0rem 5.8rem 0rem;
-    background-color: @cardBG;
-    border-radius: 30px;
-    .image-wrap {
-      position: relative;
-      height: 250px;
-      width: 250px;
-      background-color: @cardBG;
-      overflow: auto;
-      border-radius: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-      img {
-        display: block;
-        z-index: 0;
-        -o-object-fit: cover;
-        object-fit: cover;
-        -o-object-position: center center;
-        object-position: center center;
-        border-radius: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        min-width: 100%;
-        min-height: 100%;
-      }
-    }
+.v-center {
+  margin: auto;
+}
+h2 {
+  text-align: left;
+}
+h4 {
+  text-align: left;
+  font-weight: 500;
+}
+p {
+  color: #767676;
+  text-align: left;
+}
+.aside-content {
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+}
+.block-content {
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  word-break: break-word;
+  padding: 1rem;
+  & when (@imageBg) {
+    background: @ImgBgColor;
+    border-radius: 15px;
   }
-  .card-bottom {
-    background-color: @bottomCardBg;
-    position: absolute;
-    left: 15px;
-    bottom: 0px;
-    padding: 0 0.5rem;
-    width: calc(100% ~"-" 30px);
-    -webkit-transition: height 0.2s ease-in;
-    transition: height 0.2s ease-in;
-    border-radius: 20px;
-    & when not (@showIcons) {
-      bottom: -20px;
-    }
-    & when not (@showName) and not (@showRole) {
-      bottom: 0 !important;
-    }
-    &:hover {
-      bottom: 0;
-    }
-    .social-media {
-      list-style-type: none;
-      width: 100%;
-      z-index: 1;
-      -webkit-transition: height 0.2s ease-in;
-      transition: height 0.2s ease-in;
-      ul {
-        margin: 0;
-        padding: 0.5rem 0 0;
-        li {
-          margin-right: 0.8rem;
-          display: inline-block;
-          .mbr-iconfont {
-            color: @iconsColor;
-            font-size: 1rem;
-            &:hover {
-              color: @iconsHover;
-            }
-          }
-        }
-      }
-    }
-    .mbr-section-title {
-      margin-bottom: 0;
-    }
-    .mbr-role {
-      padding-bottom: 0.5rem;
-    }
-    &:not(:hover) .social-media {
-      height: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-    &:hover .social-media {
-      height: 2.5rem;
+}
+.media {
+  margin: initial;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.mbr-figure {
+  align-self: flex-start;
+  -webkit-align-self: flex-start;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  margin: auto 20px;
+  & when (@imageBg) {
+    background: @ImgBgColor;
+    border-radius: 15px;
+    img {
+      padding: 2rem;
     }
   }
 }
-@media (max-width: 1199px) {
-  .card-wrap {
-    .image-wrap {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+.card {
+  padding: 0 1rem;
+}
+.card-img {
+  padding-right: 2rem;
+  width: auto;
+}
+.card-img span {
+  font-size: 72px;
+  color: #707070;
+}
+@media (min-width: 992px) {
+  .mbr-figure {
+    & when (@reverseContent) {
+      padding-right: 0;
+      padding-left: 4rem;
+    }
+  }
+  .media-container-row {
+    & when (@reverseContent) {
+      -webkit-flex-direction: row-reverse;
     }
   }
 }
 @media (max-width: 991px) {
-  .card-wrap {
-    height: auto;
-    .image-wrap {
-      height: 150px !important;
-      width: 150px !important;
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
+  .mbr-figure {
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    & when (@reverseContent) {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      padding-top: 1rem;
+      margin-top: 2rem;
+    }
+  }
+  .media-container-row {
+    & when (@reverseContent) {
+      -webkit-flex-direction: column-reverse;
     }
   }
 }
-@media (max-width: 767px) {
-  .card-wrap {
-    .image-wrap {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
+@media (max-width: 300px) {
+  .card-img span {
+    font-size: 40px !important;
   }
 }
-.underline,.mbr-title {
+H2 {
+  text-align: center;
+  color: #551983;
+  & when (@glow) {
+    text-shadow: 0 0 2px @glowBorder, 0 0 10px @glowColor;
+  }
+}
+.mbr-text {
+  text-align: center;
+  color: #635a51;
+}
+H4 {
+  color: #652277;
   text-align: left;
+}
+H3 {
+  & when (@glow) {
+    text-shadow: 0 0 2px @glowBorder, 0 0 10px @glowColor;
+  }
 }
 }
