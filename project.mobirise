@@ -51,7 +51,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 96,
+    "uniqCompNum": 98,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "witsec-mailform": false,
@@ -3770,33 +3770,6 @@
       },
       "components": [
         {
-          "alias": "deltapi-code-editor",
-          "_isSecondary": true,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".mbr-section": {
-              "text-align": "center",
-              "color": "#fff"
-            },
-            "H4": {
-              "text-align": "center"
-            },
-            "P": {
-              "text-align": "center"
-            }
-          },
-          "_name": "custom-html",
-          "_customHTML": "<br>\n<br>\n<!-- Card -->\n<div class=\"card booking-card\">\n\n  <!-- Card image -->\n  <div class=\"view overlay\">\n    <img class=\"card-img-top\" src=\"@PROJECT_PATH@/assets/images/1-553x303.jpg\" alt=\"Card image cap\" title>\n    <a href=\"#!\">\n      <div class=\"mask rgba-white-slight\"></div>\n    </a>\n  </div>\n\n  <!-- Card content -->\n  <div class=\"card-body\">\n<!-- Title -->\n    <h4 class=\"card-title font-weight-bold\"><p>&nbsp;BOCA MAIS BONITA&nbsp;</p></h4>\n    <!-- Data -->\n<ul class=\"nav nav-tabs nav-justified md-tabs indigo\" id=\"myTabJust\" role=\"tablist\">\n  <li class=\"nav-item\">\n    <a class=\"nav-link active\" id=\"home-tab-just\" data-toggle=\"tab\" href=\"#home-just\" role=\"tab\" aria-controls=\"home-just\" aria-selected=\"true\">SOMOS</a>\n  </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" id=\"profile-tab-just\" data-toggle=\"tab\" href=\"#profile-just\" role=\"tab\" aria-controls=\"profile-just\" aria-selected=\"false\">CLIENT.</a>\n  </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" id=\"contact-tab-just\" data-toggle=\"tab\" href=\"#contact-just\" role=\"tab\" aria-controls=\"contact-just\" aria-selected=\"false\">TEL'S</a>\n  </li>\n</ul>\n<div class=\"tab-content card pt-5\" id=\"myTabContentJust\">\n  <div class=\"tab-pane fade show active\" id=\"home-just\" role=\"tabpanel\" aria-labelledby=\"home-tab-just\">\n    <p>Nossos profissionais altamente qualificados, trabalham para que pessoa como você possa ter acesso a mais alta tecnologia de tratamento: melhoria da autoestima, beleza, conquistar pessoas, a admiração da família e ganhos estéticos para seu profissionalismo .\n<br>\n<br>Temos como meta aprimorar cada vez mais nossos produtos e serviços para que você se sinta mais confiante através do seu sorriso, seja em uma entrevista de emprego ou em uma Selfie com seus amigos.</p>\n  </div>\n  <div class=\"tab-pane fade\" id=\"profile-just\" role=\"tabpanel\" aria-labelledby=\"profile-tab-just\">\n    <p>Nossos clientes são importante, até hoje fizemos mais de 153 Dentadura , e serviços complementares.</p>\n  </div>\n  <div class=\"tab-pane fade\" id=\"contact-just\" role=\"tabpanel\" aria-labelledby=\"contact-tab-just\">\n    <p>Telefones úteis. (22)998987726 ou (22)997400948</p>\n  </div>\n</div>\n    <center>\n    <p class=\"mb-2\"><b><a href=\"https://store17441987.ecwid.com/PROT%C3%89TICO-DANILO-c55577022\">IRPARA LOJA AGORA</a></b></p>\n<div class=\"dropdown\">\n  <button class=\"btn btn-primary dropdown-toggle\" type=\"button\" id=\"dropdownMenuMenu\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n    TIPO DE SERVIÇOS\n  </button>\n  <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuMenu\">\n    <button class=\"dropdown-item\" type=\"button\">FLEXÍVEL</button>\n    <button class=\"dropdown-item\" type=\"button\">DENTADURA</button>\n    <button class=\"dropdown-item\" type=\"button\">ROACH</button>\n    <button class=\"dropdown-item\" type=\"button\">PONTE MÓVEL</button>\n    <button class=\"dropdown-item\" type=\"button\">CLAREAMENTO</button>\n    <button class=\"dropdown-item\" type=\"button\">BRUXISMO</button>\n    <button class=\"dropdown-item\" type=\"button\">BLOCO DE RESINA</button>\n    <button class=\"dropdown-item\" type=\"button\">BLOCO CERÔMERO</button>\n    <button class=\"dropdown-item\" type=\"button\">CONSERTO</button>\n    <button class=\"dropdown-item\" type=\"button\">PRÓTESE CONJUGADA</button>\n    </div>\n   </center>\n      </div></center></div></div>",
-          "_cid": "s4U3hFm9kg",
-          "_anchor": "custom-html-26",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -4393,6 +4366,52 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": "deltapi-code-editor",
+          "_isSecondary": true,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section": {
+              "text-align": "center",
+              "color": "#fff"
+            }
+          },
+          "_name": "custom-html",
+          "_customHTML": "<div class=\"container mt-5\">\n\n\n  <!--Section: Content-->\n  <section class=\"text-center\">\n\n      <style>\n        @media (max-width: 767px) {\n          .social-buttons .btn {\n            padding: 8px 15px;\n            margin: 1px;\n          }\n        }\n      </style>\n\n    \n    </section>\n  <!--Section: Content-->\n\n\n</div>",
+          "_anchor": "custom-html-2o",
+          "_isUserblock": true,
+          "_sourceTheme": "creativem4",
+          "_cid": "s4X5uBsts4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "deltapi-code-editor",
+          "_isSecondary": true,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section": {
+              "text-align": "center",
+              "color": "#fff"
+            }
+          },
+          "_name": "custom-html",
+          "_customHTML": "<div class=\"container mt-5\">\n\n\n  <!--Section: Content-->\n  <section class=\"text-center\">\n\n      <style>\n        @media (max-width: 767px) {\n          .social-buttons .btn {\n            padding: 8px 15px;\n            margin: 1px;\n          }\n        }\n      </style>\n\n    \n    </section>\n  <!--Section: Content-->\n\n\n</div>",
+          "_anchor": "custom-html-2p",
+          "_isUserblock": true,
+          "_sourceTheme": "creativem4",
+          "_cid": "s4X5w4v0ar",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         }
       ]

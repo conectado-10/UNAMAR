@@ -4028,23 +4028,6 @@ nav.opened .hamburger span {
 @isScrollToTopButton: false;
 @isPublish: true;
 
-.cid-s4U3hFm9kg {
-
-padding-top: (@paddingTop * 15px);
-padding-bottom: (@paddingBottom * 15px);
-background-color: @bgColor;
-.mbr-section {
-  text-align: center;
-  color: #fff;
-}
-H4 {
-  text-align: center;
-}
-P {
-  text-align: center;
-}
-}
-
 .cid-s4WU3h5x4y {
 @paddingTop: 1;
 @paddingBottom: 0;
@@ -4661,5 +4644,27 @@ nav.opened .hamburger span {
 }
 .nav-link:hover, .dropdown-item:hover {
   color: @itemsHoverColor !important;
+}
+}
+
+.cid-s4X5uBsts4 {
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+background-color: @bgColor;
+.mbr-section {
+  text-align: center;
+  color: #fff;
+}
+}
+
+.cid-s4X5w4v0ar {
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+background-color: @bgColor;
+.mbr-section {
+  text-align: center;
+  color: #fff;
 }
 }
