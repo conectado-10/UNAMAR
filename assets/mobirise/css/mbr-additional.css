@@ -1777,6 +1777,9 @@ background-color: @bgColor;
   text-align: left;
 }
 }
+
+#witsec-modal-window-block-3a {
+}
 .cid-s0cbIbTk0M {
   padding-top: 90px;
   padding-bottom: 0px;
@@ -2328,10 +2331,10 @@ background-color: @bgColor;
 @isScrollToTopButton: true;
 @isPublish: true;
 
-.cid-s4ZWs1lGCc {
+.cid-s526UlwFnt {
 @paddingTop: 4;
 @paddingBottom: 0;
-@sizetext: 26;
+@sizetext: 29;
 @showneon: true;
 @effectstyle: "neon";
 @textshadow: #0a1c44;
@@ -2913,6 +2916,17 @@ nav.opened .hamburger span {
 }
 .nav-link:hover, .dropdown-item:hover {
   color: @itemsHoverColor !important;
+}
+}
+
+.cid-s526SjEDxb {
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+background-color: @bgColor;
+.mbr-section {
+  text-align: center;
+  color: #fff;
 }
 }
 .cid-s0cqNeAzrD {
