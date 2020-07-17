@@ -1274,10 +1274,10 @@ section.lazy-placeholder:after {
 @wdtext: 100;
 @counttext: 100;
 @moussehover: false;
-@uname__19: #000000;
-@bg-value: #000000;
+@uname__19: #00c48c;
+@bg-value: #00c48c;
 @bg-type: "color";
-@bg-color-value: #000000;
+@bg-color-value: #00c48c;
 @gradientBg: false;
 @color2: #232323;
 
@@ -1843,7 +1843,7 @@ nav.opened .hamburger span {
 }
 
 .cid-s501iKH2mx {
-@paddingTop: 6;
+@paddingTop: 2;
 @paddingBottom: 4;
 @showTitle: true;
 @showSubtitle: false;
