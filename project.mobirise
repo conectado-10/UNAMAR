@@ -53,7 +53,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 110,
+    "uniqCompNum": 112,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "witsec-mailform": false,
@@ -2122,6 +2122,130 @@
       },
       "components": [
         {
+          "_name": "design-block",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(90deg, @bg-value, @color2)"
+              }
+            },
+            ".mbr-section": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            "p": {
+              "display": "inline",
+              "font-size": "unit(@sizetext, px)",
+              "color": "#FFD100",
+              "& when (@showneon)": {
+                "& when (@effectstyle = 'stroke')": {
+                  "text-shadow": "-1px -1px 0 @textshadow, 1px -1px 0 @textshadow, -1px 1px 0 @textshadow, 1px 1px 0 @textshadow, 1px 1px 10px #141414"
+                },
+                "& when (@effectstyle = 'neon')": {
+                  "text-shadow": "0 0 2px @textshadow, 0 0 30px @textshadow, 0px 0px 5px @textshadow, 0 0 150px @textshadow"
+                },
+                "& when (@effectstyle = 'offset')": {
+                  "text-shadow": "4px 4px 0px @textshadow, 7px 7px 0px rgba(0, 0, 0, 0.2)"
+                },
+                "& when (@effectstyle = '3d')": {
+                  "text-shadow": "@textshadow 3px 5px 0, @3dcolor1 4px 6px 3px, @3dcolor2 8px 11px 10px"
+                }
+              }
+            },
+            "& when (@Style = 'defile')": {
+              ".marquee-rtl": {
+                "width": "unit(@wdtext, %)",
+                "max-width": "100%",
+                "overflow": "hidden"
+              },
+              ".marquee-rtl > :first-child": {
+                "display": "inline-block",
+                "padding-right": "2em",
+                "padding-left": "100%",
+                "white-space": "nowrap",
+                "animation": "defilement-rtl (@speedtext * 1s) infinite linear",
+                "animation-iteration-count": "(@counttext * 1)"
+              },
+              "& when (@moussehover)": {
+                ".marquee-rtl:hover :first-child": {
+                  "animation-play-state": "paused"
+                }
+              },
+              "@keyframes defilement-rtl": {
+                "0%": {
+                  "transform": "translate3d(0, 0, 0)"
+                },
+                "100%": {
+                  "transform": "translate3d(-100%, 0, 0)"
+                }
+              },
+              ".media-container-row .mbr-text": {
+                "color": "#ffffff"
+              }
+            },
+            "& when (@Style = 'blink')": {
+              ".marquee-rtl": {
+                "animation": "Test (@speedtext * 1s) infinite",
+                "padding-right": "unit(@rightpad, %)",
+                "padding-left": "unit(@leftpad, %)",
+                "animation-iteration-count": "(@counttext * 1)"
+              },
+              "@keyframes Test": {
+                "0%": {
+                  "opacity": "1"
+                },
+                "50%": {
+                  "opacity": "0"
+                },
+                "100%": {
+                  "opacity": "1"
+                }
+              }
+            },
+            "& when (@Style = 'fix')": {
+              ".marquee-rtl": {
+                "padding-right": "unit(@rightpad, %)",
+                "padding-left": "unit(@leftpad, %)"
+              }
+            },
+            "& when (@Style = 'pulse')": {
+              ".marquee-rtl": {
+                "-webkit-animation": "Test (@speedtext * 1s) ease-out",
+                "-webkit-animation-iteration-count": "infinite",
+                "opacity": "0.5",
+                "padding-right": "unit(@rightpad, %)",
+                "padding-left": "unit(@leftpad, %)"
+              },
+              "@-webkit-keyframes Test": {
+                "0%": {
+                  "opacity": "0.5"
+                },
+                "50%": {
+                  "opacity": "1.0"
+                },
+                "100%": {
+                  "opacity": "0.5"
+                }
+              }
+            },
+            ".media-container-row .mbr-text": {
+              "color": "#ffffff"
+            }
+          },
+          "_customHTML": "<br>\n<section mbr-id=\"_anchor\" class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n<header>Banner Config</header>\n              <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n       <input type=\"range\" inline title=\"Text Zoom\" name=\"sizetext\" min=\"10\" max=\"70\" step=\"1\" value=\"26\">\n             <input type=\"checkbox\" title=\"Text Effect\" name=\"showneon\" checked>\n          <select title=\"Effect Style\" name=\"effectstyle\" condition=\"showneon\">\n          <option value=\"3d\">3D</option>\n            <option value=\"neon\" selected>Neon</option>\n                    <option value=\"offset\">Offset</option>\n         <option value=\"stroke\">Stroke</option>\n          \t</select>\n      <input type=\"color\" name=\"textshadow\" title=\"Color Shadow 1\" value=\"#0a1c44\" selected condition=\"showneon\">\n      <input type=\"color\" name=\"dcolor1\" title=\"Color Shadow 2\" value=\"#c1c1c1\" condition=\"showneon&&effectstyle=='3d'\">\n      <input type=\"color\" name=\"dcolor2\" title=\"Color Shadow 3\" value=\"#232323\" condition=\"showneon&&effectstyle=='3d'\">\n\n      <hr>\n      <input type=\"checkbox\" title=\"Show Start Logo\" name=\"showLogo1\">\n       <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize1\" min=\"1\" max=\"100\" step=\"0.5\" value=\"5\" condition=\"showLogo1\">\n       <input type=\"checkbox\" title=\"Show End Logo\" name=\"showLogo2\">\n       <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize2\" min=\"1\" max=\"100\" step=\"0.5\" value=\"5\" condition=\"showLogo2\">\n       <hr>\n        <select title=\"Style\" name=\"Style\">\n          <option value=\"fix\" selected>Fixed</option>\n         <option value=\"blink\">Blink</option>\n            <option value=\"defile\">Defile</option>\n          <option value=\"pulse\">Pulse</option>\n          \t</select>\n      \n      <input type=\"range\" inline title=\"Left Padding\" name=\"leftpad\" min=\"1\" max=\"100\" step=\"1\" value=\"1\" condition=\"Style=='blink'||Style=='fix'||Style=='pulse'\">\n      <input type=\"range\" inline title=\"Right Padding\" name=\"rightpad\" min=\"1\" max=\"100\" step=\"1\" value=\"1\" condition=\"Style=='blink'||Style=='fix'||Style=='pulse'\">\n        <input type=\"range\" inline title=\"Speed\" name=\"speedtext\" min=\"1\" max=\"50\" step=\"1\" value=\"1\" condition=\"Style=='blink'||Style=='defile'||Style=='pulse'\">\n       <input type=\"range\" inline title=\"Text Area\" name=\"wdtext\" min=\"1\" max=\"100\" step=\"1\" value=\"100\" condition=\"Style=='defile'\">\n      <input type=\"range\" inline title=\"Iteration\" name=\"counttext\" min=\"1\" max=\"100\" step=\"1\" value=\"100\" condition=\"Style=='blink'||Style=='defile'||Style=='pulse'\">\n\n      \n        <input type=\"checkbox\" title=\"Mouse Hover\" name=\"moussehover\" condition=\"Style=='defile'\">\n       \n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n       </fieldset>\n       <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n       <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#232323\" condition=\"bg.type=='color'&&gradientBg\">\n\n\n    <!-- End block parameters -->\n    </mbr-parameters> \n  \n <div class=\"media-container-row\">\n   \n    <div class=\"marquee-rtl mbr-text\">\n\n  \n  <div>\n<span mbr-if=\"showLogo1\"><a href=\"https://mobirise.com\"><img src=\"@PROJECT_PATH@/assets/images/logo2.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize1 + 'rem'}\" title></a>\n</span>\n <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">SERVIÇOS LIBERAISI!!!&nbsp;</p>  \n<span mbr-if=\"showLogo2\"><a href=\"https://mobirise.com\"><img src=\"@PROJECT_PATH@/assets/images/logo2.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize2 + 'rem'}\" title></a>\n</span>\n      <div>\n\n   \n   \n   </div>\n</div>\n\n</div></div></section>",
+          "_anchor": "design-block-33",
+          "_isUserblock": true,
+          "_sourceTheme": "creativem4",
+          "_cid": "s4ZWs1lGCc",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "alias": "deltapi-code-editor",
           "_isSecondary": true,
           "_styles": {
@@ -2134,7 +2258,7 @@
             }
           },
           "_name": "custom-html",
-          "_customHTML": "<br>\n<br>\n<br>\n<br>\n\n<div class=\"card promoting-card\">\n\n  <!-- Card content -->\n  <div class=\"card-body d-flex flex-row\">\n\n    <!-- Avatar -->\n    <a href=\"page6.html\"><img src=\"@PROJECT_PATH@/assets/images/icon-50x50.png\" class=\"rounded-circle mr-3\" height=\"50px\" width=\"50px\" alt=\"avatar\" title></a>\n\n    <!-- Content -->\n    <div>\n\n      <!-- Title -->\n      <h4 class=\"card-title font-weight-bold mb-2\"><a href=\"page6.html\">Pedreiros</a></h4>\n      <!-- Subtitle -->\n      <p class=\"card-text\"><a href=\"page6.html\">Profissional</a></p>\n    </div>\n  </div></div>\n",
+          "_customHTML": "<br>\n<div class=\"card promoting-card\">\n\n  <!-- Card content -->\n  <div class=\"card-body d-flex flex-row\">\n\n    <!-- Avatar -->\n    <a href=\"page6.html\"><img src=\"@PROJECT_PATH@/assets/images/icon-50x50.png\" class=\"rounded-circle mr-3\" height=\"50px\" width=\"50px\" alt=\"avatar\" title></a>\n\n    <!-- Content -->\n    <div>\n\n      <!-- Title -->\n      <h4 class=\"card-title font-weight-bold mb-2\"><a href=\"page6.html\">Pedreiros</a></h4>\n      <!-- Subtitle -->\n      <p class=\"card-text\"><a href=\"page6.html\">Profissional</a></p>\n    </div>\n  </div></div>\n",
           "_cid": "s4TksxtGki",
           "_anchor": "custom-html-1u",
           "_protectedParams": [],
