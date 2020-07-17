@@ -4241,154 +4241,16 @@ P {
 }
 }
 
-.cid-RnpyjWWuxm {
-@paddingTop: 0;
-@paddingBottom: 1;
-@showTitle: true;
-@showSubtitle: false;
-@glow: true;
-@glowBorder: #00c48c;
-@glowColor: #ffffff;
-@showTextHead: true;
-@showText: false;
-@showIcons: true;
-@reverseContent: false;
-@mediaSize: 60;
-@imageBg: true;
-@ImgBgColor: #29a5ef;
-@cardsAmount: "4";
-@uname__13: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/projects/project-2020-05-21_065934/assets/images/design%20ohne%20titel%20(3)-1500x1500.png";
-@uname__14: true;
-@uname__15: #ffffff;
-@bg-value: #ffffff;
-@bg-type: "color";
-@bg-color-value: #ffffff;
-@bg-parallax: false;
-@overlay: true;
-@overlayColor: #232323;
-@overlayOpacity: 0.2;
+.cid-s4Xf9VdLqp {
 
 padding-top: (@paddingTop * 15px);
 padding-bottom: (@paddingBottom * 15px);
-& when (@bg-type = 'color') {
-  background-color: @bg-value;
-}
-& when (@bg-type = 'image') {
-  background-image: url(../../../@bg-value);
-}
-.v-center {
-  margin: auto;
-}
-h2 {
-  text-align: left;
-}
-h4 {
-  text-align: left;
-  font-weight: 500;
-}
-p {
-  color: #767676;
-  text-align: left;
-}
-.aside-content {
-  flex-basis: 100%;
-  -webkit-flex-basis: 100%;
-}
-.block-content {
-  display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  word-break: break-word;
-  padding: 1rem;
-  & when (@imageBg) {
-    background: @ImgBgColor;
-    border-radius: 15px;
-  }
-}
-.media {
-  margin: initial;
-  align-items: center;
-  -webkit-align-items: center;
-}
-.mbr-figure {
-  align-self: flex-start;
-  -webkit-align-self: flex-start;
-  -webkit-flex-shrink: 0;
-  flex-shrink: 0;
-  margin: auto 20px;
-  & when (@imageBg) {
-    background: @ImgBgColor;
-    border-radius: 15px;
-    img {
-      padding: 2rem;
-    }
-  }
-}
-.card {
-  padding: 0 1rem;
-}
-.card-img {
-  padding-right: 2rem;
-  width: auto;
-}
-.card-img span {
-  font-size: 72px;
-  color: #707070;
-}
-@media (min-width: 992px) {
-  .mbr-figure {
-    & when (@reverseContent) {
-      padding-right: 0;
-      padding-left: 4rem;
-    }
-  }
-  .media-container-row {
-    & when (@reverseContent) {
-      -webkit-flex-direction: row-reverse;
-    }
-  }
-}
-@media (max-width: 991px) {
-  .mbr-figure {
-    padding-right: 0;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    & when (@reverseContent) {
-      padding-bottom: 0;
-      margin-bottom: 0;
-      padding-top: 1rem;
-      margin-top: 2rem;
-    }
-  }
-  .media-container-row {
-    & when (@reverseContent) {
-      -webkit-flex-direction: column-reverse;
-    }
-  }
-}
-@media (max-width: 300px) {
-  .card-img span {
-    font-size: 40px !important;
-  }
-}
-H2 {
+background-color: @bgColor;
+.mbr-section {
   text-align: center;
-  color: #551983;
-  & when (@glow) {
-    text-shadow: 0 0 2px @glowBorder, 0 0 10px @glowColor;
-  }
-}
-.mbr-text {
-  text-align: center;
-  color: #635a51;
+  color: #fff;
 }
 H4 {
-  color: #652277;
-  text-align: left;
-}
-H3 {
-  & when (@glow) {
-    text-shadow: 0 0 2px @glowBorder, 0 0 10px @glowColor;
-  }
+  text-align: center;
 }
 }
