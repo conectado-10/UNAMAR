@@ -1255,8 +1255,8 @@ section.lazy-placeholder:after {
 @isPublish: true;
 
 .cid-AezXTyDOBq {
-@paddingTop: 6;
-@paddingBottom: 1;
+@paddingTop: 4;
+@paddingBottom: 0;
 @bgColor: #ffffff;
 
 padding-top: (@paddingTop * 15px);
