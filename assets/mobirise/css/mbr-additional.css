@@ -1259,8 +1259,8 @@ section.lazy-placeholder:after {
 @paddingBottom: 0;
 @sizetext: 29;
 @showneon: true;
-@effectstyle: "neon";
-@textshadow: #0a1c44;
+@effectstyle: "stroke";
+@textshadow: #133996;
 @dcolor1: #c1c1c1;
 @dcolor2: #232323;
 @showLogo1: false;
