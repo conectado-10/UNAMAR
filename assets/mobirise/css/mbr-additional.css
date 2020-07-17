@@ -1258,7 +1258,7 @@ section.lazy-placeholder:after {
 @paddingTop: 4;
 @paddingBottom: 0;
 @sizetext: 29;
-@showneon: true;
+@showneon: false;
 @effectstyle: "stroke";
 @textshadow: #133996;
 @dcolor1: #c1c1c1;
@@ -1274,10 +1274,10 @@ section.lazy-placeholder:after {
 @wdtext: 100;
 @counttext: 100;
 @moussehover: false;
-@uname__19: #ffffff;
-@bg-value: #ffffff;
+@uname__19: #000000;
+@bg-value: #000000;
 @bg-type: "color";
-@bg-color-value: #ffffff;
+@bg-color-value: #000000;
 @gradientBg: false;
 @color2: #232323;
 
@@ -1839,6 +1839,114 @@ nav.opened .hamburger span {
 }
 .nav-link:hover, .dropdown-item:hover {
   color: @itemsHoverColor !important;
+}
+}
+
+.cid-s501iKH2mx {
+@paddingTop: 6;
+@paddingBottom: 4;
+@showTitle: true;
+@showSubtitle: false;
+@tableColumns: 1;
+@tableRows: 2;
+@tbColor: #ffffff;
+@tbBackground: false;
+@tbBgColor: #ffffff;
+@isSearch: true;
+@uname__11: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/projects/project-2020-05-21_065934/assets/images/background1.jpg";
+@uname__12: true;
+@uname__13: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@overlay: true;
+@overlayColor: #ffffff;
+@overlayOpacity: 0.9;
+
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+& when (@bg-type = 'color') {
+  background-color: @bg-value;
+}
+& when (@bg-type = 'image') {
+  background-image: url(../../../@bg-value);
+}
+.mbr-section-subtitle {
+  color: #767676;
+}
+.container-table {
+  margin: 0 auto;
+}
+.scroll {
+  overflow-x: auto;
+  padding: 0;
+}
+.dataTables_wrapper {
+  display: block;
+  .search {
+    margin-bottom: .5rem;
+  }
+  .table {
+    overflow-x: auto;
+  }
+}
+table {
+  width: 100% !important;
+  margin-top: 6px;
+  border: 1px solid @tbColor;
+  margin-bottom: 0;
+  th {
+    border-top: none;
+    transition: all .2s;
+    border-bottom: none;
+    &:hover {
+      background: @tbColor;
+      color: contrast(@tbColor);
+    }
+  }
+  td {
+    border-top: 1px solid @tbColor;
+  }
+  &.table {
+    & when (@tbBackground) {
+      background: @tbBgColor;
+    }
+  }
+}
+.dataTables_filter {
+  text-align: right;
+  margin-bottom: .5rem;
+  label {
+    display: inline;
+    white-space: normal !important;
+  }
+  input {
+    display: inline;
+    width: auto;
+    margin-left: .5rem;
+    border-radius: 100px;
+    padding-left: 1rem;
+  }
+}
+.dataTables_info {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  white-space: normal !important;
+}
+@media (max-width: 992px) {
+  .dataTables_filter {
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .dataTables_filter {
+    text-align: center;
+    input {
+      width: 100% !important;
+      margin-left: 0 !important;
+    }
+  }
 }
 }
 .cid-s0cbIbTk0M {
