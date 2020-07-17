@@ -4948,46 +4948,13 @@ H4 {
 }
 }
 
-.cid-Celn0rgZvI {
-@Whatbutton: true;
-@heightwhat: 63;
-@widthwhat: 58;
-@bottomwhat: 43;
-@rightwhat: 30;
-@borderadius: 49;
-@bgcolorwhat: #25d366;
-@colorwhat: #ffffff;
-@FontSize: 34;
+.cid-s52LGoMTzb {
 
-& when (@Whatbutton) {
-  .float {
-    position: fixed;
-    width: (@widthwhat * 1px);
-    height: (@heightwhat * 1px);
-    bottom: (@bottomwhat * 1px);
-    right: (@rightwhat * 1px);
-    background-color: @bgcolorwhat;
-    color: @colorwhat;
-    border-radius: (@borderadius * 1px);
-    text-align: center;
-    font-size: (@FontSize * 1px);
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-  }
-  .my-float {
-    margin-top: 16px;
-  }
-}
-P {
-  color: #232323;
-}
-DIV {
-  color: #ffffff;
-}
-H10 {
-  color: #767676;
-}
-.hidden {
-  display: none;
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+background-color: @bgColor;
+.mbr-section {
+  text-align: center;
+  color: #fff;
 }
 }
