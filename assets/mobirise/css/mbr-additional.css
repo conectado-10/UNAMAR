@@ -1139,20 +1139,20 @@ section.lazy-placeholder:after {
 @isScrollToTopButton: true;
 @isPublish: true;
 
-.cid-s55umweGAy {
+.cid-esN9K3zopY {
 @fullScreen: false;
-@paddingTop: 2;
+@paddingTop: 1;
 @paddingBottom: 0;
 @showTitle: true;
 @showSubTitle: false;
 @showText: false;
 @showButtons: false;
-@uname__12: "";
+@uname__12: "file:///C:/Users/Csaba/AppData/Local/Mobirise.com/Mobirise/chesswizardextra_0040gmail_002ecom/userblocks/mobirise4/header16_4/background4_1.jpg";
 @uname__13: true;
-@uname__14: #ffffff;
-@bg-value: #ffffff;
+@uname__14: #efefef;
+@bg-value: #efefef;
 @bg-type: "color";
-@bg-color-value: #ffffff;
+@bg-color-value: #efefef;
 @bg-parallax: false;
 @overlay: true;
 @overlayColor: #232323;
@@ -1170,15 +1170,6 @@ section.lazy-placeholder:after {
 }
 P {
   color: #767676;
-}
-hr {
-  border: none;
-  height: 50px;
-  width: 90%;
-  margin-top: 0;
-  border-bottom: 1px solid #1f1209;
-  box-shadow: 0 20px 20px -20px #333333;
-  margin: -50px auto 10px;
 }
 }
 
@@ -1243,7 +1234,7 @@ p {
 }
 }
 .cid-s0cqNeAzrD {
-  padding-top: 90px;
+  padding-top: 15px;
   padding-bottom: 0px;
   background: #ffffff;
 }
@@ -1373,7 +1364,7 @@ p {
   color: #939bb4;
 }
 .cid-s0ctEUqJrg {
-  padding-top: 90px;
+  padding-top: 15px;
   padding-bottom: 0px;
   background: #ffffff;
 }
@@ -1625,105 +1616,8 @@ p {
   color: @dangerColor;
 }
 }
-@primaryColor: #133996;
-@secondaryColor: #fc643f;
-@successColor: #00c48c;
-@infoColor: #fdece8;
-@warningColor: #ffcf5c;
-@dangerColor: #939bb4;
-@mainFont: DM Sans;
-@display1Font: 'DM Sans', sans-serif;
-@display1Size: 3.25;
-@display2Font: 'DM Sans', sans-serif;
-@display2Size: 2.125;
-@display5Font: 'DM Sans', sans-serif;
-@display5Size: 1.5;
-@display7Font: 'DM Sans', sans-serif;
-@display7Size: 1.0625;
-@display4Font: 'DM Sans', sans-serif;
-@display4Size: 0.875;
-@isRoundedButtons: true;
-@isAnimatedOnScroll: true;
-@isScrollToTopButton: true;
-@isPublish: true;
-
-.cid-s5297vMr3z {
-
-padding-top: (@paddingTop * 15px);
-padding-bottom: (@paddingBottom * 15px);
-background-color: @bgColor;
-.mbr-section {
-  text-align: center;
-  color: #fff;
-}
-H4 {
-  text-align: center;
-}
-P {
-  text-align: center;
-}
-}
-
-.cid-s5297wIwRO {
-
-padding-top: (@paddingTop * 15px);
-padding-bottom: (@paddingBottom * 15px);
-background-color: @bgColor;
-.mbr-section {
-  text-align: center;
-  color: #fff;
-}
-H4 {
-  text-align: center;
-}
-}
-
-.cid-s55nEl3uNx {
-@paddingTop: 2;
-@paddingBottom: 2;
-@reveal: false;
-@uname__8: "file:///C:/Users/bacho/AppData/Local/Mobirise.com/Mobirise/sintoniabarra_0040gmail_002ecom/addons/creativem4/components/footer01/../_images/background1.jpg";
-@uname__9: false;
-@uname__10: #ffffff;
-@bg-value: #ffffff;
-@bg-type: "color";
-@bg-color-value: #ffffff;
-@bg-parallax: false;
-@overlay: true;
-@overlayColor: #232323;
-@overlayOpacity: 0.8;
-
-padding-top: (@paddingTop * 15px);
-padding-bottom: (@paddingBottom * 15px);
-& when (@bg-type = "image") {
-  background-image: url(../../../@bg-value);
-}
-& when (@bg-type = "color") {
-  background-color: @bg-value;
-}
-p {
-  color: @dangerColor;
-}
-}
-.cid-wIRbcQa7rE {
-  padding-top: 15px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
-.cid-wIRbcQa7rE P {
-  color: #767676;
-}
-.cid-wIRbcQa7rE hr {
-  border: none;
-  height: 50px;
-  width: 90%;
-  margin-top: 0;
-  border-bottom: 1px solid #1f1209;
-  box-shadow: 0 20px 20px -20px #333333;
-  margin: -50px auto 10px;
-}
 .cid-s55caN3ofp {
-  padding-top: 0px;
+  padding-top: 15px;
   padding-bottom: 15px;
   background: #ffffff;
 }
@@ -1852,25 +1746,8 @@ p {
 .cid-s55nEl3uNx p {
   color: #939bb4;
 }
-.cid-s55vJO9MEs {
-  padding-top: 15px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
-.cid-s55vJO9MEs P {
-  color: #767676;
-}
-.cid-s55vJO9MEs hr {
-  border: none;
-  height: 50px;
-  width: 90%;
-  margin-top: 0;
-  border-bottom: 1px solid #1f1209;
-  box-shadow: 0 20px 20px -20px #333333;
-  margin: -50px auto 10px;
-}
 .cid-s55vJPhPiU {
-  padding-top: 0px;
+  padding-top: 15px;
   padding-bottom: 15px;
   background: #ffffff;
 }
