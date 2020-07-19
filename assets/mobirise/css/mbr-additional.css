@@ -1515,49 +1515,6 @@ p {
 @isScrollToTopButton: true;
 @isPublish: true;
 
-.cid-s55qbvsyhv {
-@fullScreen: false;
-@paddingTop: 1;
-@paddingBottom: 0;
-@showTitle: true;
-@showSubTitle: false;
-@showText: false;
-@showButtons: false;
-@uname__12: "";
-@uname__13: true;
-@uname__14: #ffffff;
-@bg-value: #ffffff;
-@bg-type: "color";
-@bg-color-value: #ffffff;
-@bg-parallax: false;
-@overlay: true;
-@overlayColor: #232323;
-@overlayOpacity: 0.6;
-
-& when not (@fullScreen) {
-  padding-top: (@paddingTop * 15px);
-  padding-bottom: (@paddingBottom * 15px);
-}
-& when (@bg-type = 'color') {
-  background-color: @bg-value;
-}
-& when (@bg-type = 'image') {
-  background-image: url(../../../@bg-value);
-}
-P {
-  color: #767676;
-}
-hr {
-  border: none;
-  height: 50px;
-  width: 90%;
-  margin-top: 0;
-  border-bottom: 1px solid #1f1209;
-  box-shadow: 0 20px 20px -20px #333333;
-  margin: -50px auto 10px;
-}
-}
-
 .cid-s4X8EmjtwS {
 
 padding-top: (@paddingTop * 15px);
