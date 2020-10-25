@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page10.html",
+    "currentPage": "page5.html",
     "theme": {
       "name": "creativem4",
       "title": "CreativeM4",
@@ -53,7 +53,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 158,
+    "uniqCompNum": 165,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "witsec-mailform": false,
@@ -704,6 +704,104 @@
           "_params": {}
         },
         {
+          "_name": "design-block",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".container-table": {
+              "margin": "0 auto"
+            },
+            ".scroll": {
+              "overflow-x": "auto",
+              "padding": "0"
+            },
+            ".dataTables_wrapper": {
+              "display": "block",
+              ".search": {
+                "margin-bottom": ".5rem"
+              },
+              ".table": {
+                "overflow-x": "auto"
+              }
+            },
+            "table": {
+              "width": "100% !important",
+              "margin-top": "6px",
+              "border": "1px solid @tbColor",
+              "margin-bottom": "0",
+              "th": {
+                "border-top": "none",
+                "transition": "all .2s",
+                "border-bottom": "none",
+                "&:hover": {
+                  "background": "@tbColor",
+                  "color": "contrast(@tbColor)"
+                }
+              },
+              "td": {
+                "border-top": "1px solid @tbColor"
+              },
+              "&.table": {
+                "& when (@tbBackground)": {
+                  "background": "@tbBgColor"
+                }
+              }
+            },
+            ".dataTables_filter": {
+              "text-align": "right",
+              "margin-bottom": ".5rem",
+              "label": {
+                "display": "inline",
+                "white-space": "normal !important"
+              },
+              "input": {
+                "display": "inline",
+                "width": "auto",
+                "margin-left": ".5rem",
+                "border-radius": "100px",
+                "padding-left": "1rem"
+              }
+            },
+            ".dataTables_info": {
+              "padding-bottom": "1rem",
+              "padding-top": "1rem",
+              "white-space": "normal !important"
+            },
+            "@media (max-width: 992px)": {
+              ".dataTables_filter": {
+                "text-align": "center"
+              }
+            },
+            "@media (max-width: 350px)": {
+              ".dataTables_filter": {
+                "text-align": "center",
+                "input": {
+                  "width": "100% !important",
+                  "margin-left": "0 !important"
+                }
+              }
+            }
+          },
+          "_customHTML": "<section class=\"section-table\" group=\"Tables\" plugins=\"dataTables\" data-bg-video=\"{{bg.type=='video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\"> <mbr-parameters> <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\"> <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\"> <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked> <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\"> <input type=\"range\" inline title=\"Columns\" name=\"tableColumns\" min=\"1\" max=\"50\" step=\"1\" value=\"1\"> <input type=\"range\" inline title=\"Rows\" name=\"tableRows\" min=\"1\" max=\"50\" step=\"1\" value=\"3\"> <input type=\"color\" title=\"Table Border Color\" name=\"tbColor\" value=\"#0a1c44\"> <input type=\"checkbox\" title=\"Table Background\" name=\"tbBackground\"> <input type=\"color\" title=\"Table Background Color\" name=\"tbBgColor\" value=\"#ffffff\" condition=\"tbBackground\"> <input type=\"checkbox\" title=\"Search\" name=\"isSearch\" checked> <fieldset type=\"background\" name=\"bg\" parallax> <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax> <input type=\"color\" title=\"Background Color\" value=\"#f2f6ff\" selected> <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\"> </fieldset> <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !=='color'\" checked> <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !=='color'\"> <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !=='color'\"> </mbr-parameters> <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!=='color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"> </div><div class=\"container container-table\"> <h2 class=\"mbr-section-title mbr-fonts-style align-center pb-3\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">PRESTAÇÃO DE SERVIÇOS</h2> <h3 class=\"mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"> Abaixo tabela de preço para o Grupo Conectado</h3> <div class=\"table-wrapper\"> <div class=\"container\"> <div class=\"row search\" mbr-if=\"isSearch\"> <div class=\"col-md-6\"></div><div class=\"col-md-6\"> <div class=\"dataTables_filter\"> <label mbr-text class=\"searchInfo mbr-fonts-style\" mbr-theme-style=\"display-7\">O QUE ESTA PROCURANDO?:</label> <input class=\"form-control input-sm\" disabled> </div></div></div></div><div class=\"container scroll\"> <table class=\"table\" mbr-class=\"{'isSearch':isSearch}\" cellspacing=\"0\"> <thead> <tr class=\"table-heads \" mbr-list mbr-list-grow=\"tableColumns\"> <th mbr-text class=\"head-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".head-item\" data-sortable=\"false\">PRESTADORES SERVIÇOS</th> </tr></thead> <tbody mbr-list mbr-list-grow=\"tableRows\"> <tr mbr-list mbr-list-grow=\"tableColumns\"> <td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">EM BREVE</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\"> <td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">EM BREVE</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\"> <td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">EM BREVE</td></tr></tbody> </table> </div><div class=\"container table-info-container\"> <div class=\"row info\" mbr-if=\"isSearch\"> <div class=\"col-md-6\"> <div class=\"dataTables_info mbr-fonts-style\" mbr-theme-style=\"display-7\"> <span mbr-text class=\"infoBefore\" data-app-selector=\".dataTables_info\">PRODUTOS</span> <span class=\"inactive infoRows\"></span> <span mbr-text class=\"infoAfter\" data-app-selector=\".dataTables_info\">entries</span> <span mbr-text class=\"infoFilteredBefore\" data-app-selector=\".dataTables_info\">(Grupo Conectado</span> <span class=\"inactive infoRows\"></span> <span mbr-text class=\"infoFilteredAfter\" data-app-selector=\".dataTables_info\"> total entries)</span> </div></div><div class=\"col-md-6\"></div></div></div></div></div></section>",
+          "_anchor": "design-block-4j",
+          "_isUserblock": true,
+          "_sourceTheme": "creativem4",
+          "_cid": "seqaRH5o6e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "alias": "deltapi-code-editor",
           "_isSecondary": true,
           "_styles": {
@@ -742,12 +840,33 @@
             }
           },
           "_name": "footer01",
-          "_customHTML": "<section group=\"Footers\" global once mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-black\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    ©GRUPO CONECTADO</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<ul class=\"list-group\">\n  <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n   Pedreiro\n    <span class=\"badge badge-primary badge-pill\">0</span>\n  </li>\n  <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n    Diarista\n    <span class=\"badge badge-primary badge-pill\">0</span>\n  </li>\n  <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n    Eletricista\n    <span class=\"badge badge-primary badge-pill\">0</span>\n  </li>\n</ul>",
           "_cid": "s55nEl3uNx",
           "_anchor": "footer01-40",
           "_protectedParams": [],
-          "_global": true,
-          "_once": true,
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "deltapi-code-editor",
+          "_isSecondary": true,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section": {
+              "text-align": "center",
+              "color": "#fff"
+            }
+          },
+          "_name": "custom-html",
+          "_customHTML": "<!-- Basic dropdown -->\n<center>\n<button class=\"btn btn-primary dropdown-toggle mr-4\" type=\"button\" data-toggle=\"dropdown\"\n  aria-haspopup=\"true\" aria-expanded=\"false\">Basic dropdown</button>\n\n<div class=\"dropdown-menu\">\n  <a class=\"dropdown-item\" href=\"#\">Action</a>\n  <a class=\"dropdown-item\" href=\"#\">Another action</a>\n  <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n  <div class=\"dropdown-divider\"></div>\n  <a class=\"dropdown-item\" href=\"#\">Separated link</a>\n</div>\n</center>\n<!-- Basic dropdown -->",
+          "_cid": "seqU9NvvC7",
+          "_anchor": "custom-html-4k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         }
       ]
